@@ -15,5 +15,5 @@ app.use('/api/bills',require('./routes/transaction'))
 
 
 app.listen(port, () => {
-  console.log(`backend listening at http://localhost:${port}`)
+  console.log(`backend listening at ${process.env.CYCLIC_URL}:${port}`)
 })
