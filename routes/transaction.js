@@ -117,6 +117,8 @@ async function getTrans(groupId) {
            }
        }
        console.log(idbal)
+
+       
        
        var final_ti=await getOptimised(idbal)
        var final_t=final_ti
