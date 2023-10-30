@@ -33,10 +33,10 @@ async function getTrans(groupId) {
         
     const transactions = [];
 
-    // Convert the Map keys to an array and sort the users by their net balances
+    
     const sortedUsers = Array.from(netBalances.keys()).sort((a, b) => netBalances.get(a) - netBalances.get(b));
 
-    // Initialize two pointers for users who owe and are owed money
+    
     let oweIndex = 0;
     let owedIndex = sortedUsers.length - 1;
 
@@ -76,22 +76,22 @@ async function getTrans(groupId) {
 
   async function getEmailByUserId(userId) {
     try {
-      // Query the database to find the user by their user ID
+      
       const user = await User.findById(userId);
   
       if (!user) {
-        // Handle the case where the user is not found
+        
         return null;
       }
   
-      // Retrieve the email from the user document
+     
       const email = user.email;
   
       return email;
     } catch (error) {
-      // Handle any errors that may occur during the database query
       
-      throw error; // Handle the error according to your application's needs
+      
+      throw error; 
     }
   }
 
