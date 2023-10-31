@@ -1,0 +1,311 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "splitwise",
+    "dateExported": "2023-10-30T13:38:50.744Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "fdc9fd0a-8322-4c14-acce-9419c4a978c6",
+            "colId": "509dcd1d-e7ca-4c9b-9d6e-e029ae466084",
+            "containerId": "",
+            "name": "auth_post",
+            "url": "https://dharna-splitwise.onrender.com/api/auth/createuser",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-10-23T21:09:29.742Z",
+            "modified": "2023-10-30T07:04:05.829Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"Dharneesh\",\n  \"email\":\"owner5@gmail.com\",\n  \"password\":\"goodluck\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "6a01d45b-19fb-4236-a851-9372d17090fc",
+            "colId": "509dcd1d-e7ca-4c9b-9d6e-e029ae466084",
+            "containerId": "",
+            "name": "auth_get",
+            "url": "https://dharna-splitwise.onrender.com/api/auth/login",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-10-24T13:14:33.184Z",
+            "modified": "2023-10-30T07:59:54.480Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"owner2@gmail.com\",\n  \"password\":\"goodluck\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "414a008a-e92b-4280-9197-a0eaff8f804c",
+            "colId": "509dcd1d-e7ca-4c9b-9d6e-e029ae466084",
+            "containerId": "",
+            "name": "auth_token",
+            "url": "https://dharna-splitwise.onrender.com/api/auth/getuser",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-10-24T13:28:20.561Z",
+            "modified": "2023-10-30T08:19:40.620Z",
+            "headers": [
+                {
+                    "name": "auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjUzZjU1NGUyZTcxZWQ3YjRlMzY0MTdkIn0sImlhdCI6MTY5ODY1Mjc5NH0.QKLNwdRxrD7TCp4EO20iQSZL8lRttOg03o1jP4Ey8lA"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "2226e801-3422-4bf9-9c2d-94c87d1c77aa",
+            "colId": "509dcd1d-e7ca-4c9b-9d6e-e029ae466084",
+            "containerId": "",
+            "name": "create_group",
+            "url": "https://dharna-splitwise.onrender.com/api/group/",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2023-10-25T18:32:03.549Z",
+            "modified": "2023-10-30T07:04:25.676Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjUzN2MyZDhjZWM5NWUyOTMxNTAxMWU4In0sImlhdCI6MTY5ODI1MzAwNn0.4JUnU9EtIVMa3y0J5wPFC87-C6h0q-OEEiNJgnGkSQ8"
+                },
+                {
+                    "name": "group_name",
+                    "value": "All the best"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"group_name\":\"All the best\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "be1fdc70-015f-4174-b71b-062fa1a7caa4",
+            "colId": "509dcd1d-e7ca-4c9b-9d6e-e029ae466084",
+            "containerId": "",
+            "name": "add_user_group",
+            "url": "https://dharna-splitwise.onrender.com/api/group/adduser/653f55792e71ed7b4e364188",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2023-10-25T20:32:10.645Z",
+            "modified": "2023-10-30T08:00:09.436Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjUzZjU1NGUyZTcxZWQ3YjRlMzY0MTdkIn0sImlhdCI6MTY5ODY1Mjc5NH0.QKLNwdRxrD7TCp4EO20iQSZL8lRttOg03o1jP4Ey8lA"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"emails\":[\"owner@gmail.com\"]\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "825f091f-a2bd-4b76-b1ff-f863de1dba49",
+            "colId": "509dcd1d-e7ca-4c9b-9d6e-e029ae466084",
+            "containerId": "",
+            "name": "get_optimized_trans",
+            "url": "https://dharna-splitwise.onrender.com/api/group/getDeal/653f55792e71ed7b4e364188",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2023-10-26T12:00:00.607Z",
+            "modified": "2023-10-30T08:01:31.135Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjUzN2MyZDhjZWM5NWUyOTMxNTAxMWU4In0sImlhdCI6MTY5ODMyMTY1N30.jrmvDAKVvmwNlHr-zR0qCPkbDtxMRWk__piMgaH5ncw"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "c52b0965-d706-4ec6-912e-e343ccb551e2",
+            "colId": "509dcd1d-e7ca-4c9b-9d6e-e029ae466084",
+            "containerId": "",
+            "name": "del_user_group",
+            "url": "https://dharna-splitwise.onrender.com/api/group/deleteuser/653f55792e71ed7b4e364188",
+            "method": "DELETE",
+            "sortNum": 80000,
+            "created": "2023-10-26T12:34:16.558Z",
+            "modified": "2023-10-30T07:11:34.672Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjUzN2MyZDhjZWM5NWUyOTMxNTAxMWU4In0sImlhdCI6MTY5ODMyMTY1N30.jrmvDAKVvmwNlHr-zR0qCPkbDtxMRWk__piMgaH5ncw"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"emails\":[\"owner3@gmail.com\"]\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "c97a942e-83de-4d85-be57-b5d5a1e34aa0",
+            "colId": "509dcd1d-e7ca-4c9b-9d6e-e029ae466084",
+            "containerId": "",
+            "name": "get_groups_user",
+            "url": "https://dharna-splitwise.onrender.com/api/group/",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2023-10-26T14:13:40.221Z",
+            "modified": "2023-10-30T07:20:20.493Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjUzN2MyZDhjZWM5NWUyOTMxNTAxMWU4In0sImlhdCI6MTY5ODMyMTY1N30.jrmvDAKVvmwNlHr-zR0qCPkbDtxMRWk__piMgaH5ncw"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "0fd8f69c-be1a-419b-a2c7-ed0c6a253740",
+            "colId": "509dcd1d-e7ca-4c9b-9d6e-e029ae466084",
+            "containerId": "",
+            "name": "get_trans_group",
+            "url": "http://localhost:5000/api/bills/653a4cfd4b72dff679dad49f",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2023-10-26T14:22:59.855Z",
+            "modified": "2023-10-26T14:25:49.104Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjUzN2MyZDhjZWM5NWUyOTMxNTAxMWU4In0sImlhdCI6MTY5ODMyMTY1N30.jrmvDAKVvmwNlHr-zR0qCPkbDtxMRWk__piMgaH5ncw"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "e4d05094-7bdc-4f26-ae79-922546df756c",
+            "colId": "509dcd1d-e7ca-4c9b-9d6e-e029ae466084",
+            "containerId": "",
+            "name": "get_name_email",
+            "url": "https://dharna-splitwise.onrender.com/api/group/getusers/653f55792e71ed7b4e364188",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2023-10-26T16:44:25.499Z",
+            "modified": "2023-10-30T07:22:21.571Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjUzN2MyZDhjZWM5NWUyOTMxNTAxMWU4In0sImlhdCI6MTY5ODMyMTY1N30.jrmvDAKVvmwNlHr-zR0qCPkbDtxMRWk__piMgaH5ncw"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "4234fb25-9cce-4351-9967-cdccb4ae88ca",
+            "colId": "509dcd1d-e7ca-4c9b-9d6e-e029ae466084",
+            "containerId": "",
+            "name": "add_bill",
+            "url": "https://dharna-splitwise.onrender.com/api/bills/653f55792e71ed7b4e364188",
+            "method": "POST",
+            "sortNum": 120000,
+            "created": "2023-10-26T17:38:28.116Z",
+            "modified": "2023-10-30T08:02:00.328Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjUzN2MyZDhjZWM5NWUyOTMxNTAxMWU4In0sImlhdCI6MTY5ODMyMTY1N30.jrmvDAKVvmwNlHr-zR0qCPkbDtxMRWk__piMgaH5ncw"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"from\":\"owner2@gmail.com\",\n  \"to\":[\"owner3@gmail.com\",\"owner@gmail.com\",\"owner2@gmail.com\"],\n  \"split\":[10,40,32],\n  \"total\":82\n  \n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "66ad4eb0-7348-43a2-9774-28c7c1db6443",
+            "colId": "509dcd1d-e7ca-4c9b-9d6e-e029ae466084",
+            "containerId": "",
+            "name": "del_bill",
+            "url": "http://localhost:5000/api/bills/653a4cfd4b72dff679dad49f/653bdf8171020d44b7da1cd1",
+            "method": "DELETE",
+            "sortNum": 130000,
+            "created": "2023-10-26T19:39:45.992Z",
+            "modified": "2023-10-27T16:11:36.250Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjUzN2MyZDhjZWM5NWUyOTMxNTAxMWU4In0sImlhdCI6MTY5ODMyMTY1N30.jrmvDAKVvmwNlHr-zR0qCPkbDtxMRWk__piMgaH5ncw"
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
